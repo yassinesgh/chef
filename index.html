@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
   <link rel="stylesheet" href="./node_modules/animate.css/animate.css">
   <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.css">
   <link rel="stylesheet" href="./assets/css/style.css" />
@@ -13,6 +14,7 @@
 
 <body>
   <header class="section1">
+    <!-- d abord la navbar dans un container -->
     <div class="container">
       <nav class="navbar-expand">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
@@ -20,8 +22,8 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse " id="navbarNav">
-          <ul class="navbar-nav d-flex align-items-center">
-            <li class="nav-item border-bottom border-top">
+          <ul class="navbar-nav d-flex align-items-center ">
+            <li class="nav-item border-bottom border-top bg-danger">
               <a class="nav-link" href="#">HOME</a>
             </li>
             <li class="nav-item border-top border-bottom">
@@ -34,7 +36,7 @@
               <a class="nav-link" href="#">TEAM</a>
             </li> 
             <a class="navbar-brand m-auto d-sm-none d-md-block pr-5 pl-5 pt-3" href="#"><img
-              src="./images/logo.png" alt="logo"></a>
+              src="assets/images/logo.png" alt="logo"></a>
             <li class="nav-item border-bottom border-top">
               <a class="nav-link" href="#">RESERVATION</a>
             </li>
@@ -51,21 +53,41 @@
         </div>
       </nav>
     </div>
+    <!-- fin de la navbar -->
+    <!-- maintenant le carousel -->
  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
-        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active indicateur"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1" class="indicateur"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2" class="indicateur"></li>
       </ol>
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="./images/banner1.jpg" class="d-block w-100" alt="...">
+          <img src="assets/images/banner1.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+              <h1>Whatever your <span class="occasion">OCCASION</span>,<br> <span class="taste">TASTE</span> <span class ="makes">makes</span> it one <br> to <span class="remember">remember!</span></h1>
+              <button type="button" class="btn btn-light">PURCHASE THEME</button>
+              <button type="button" class="btn btn-light">LEARN MORE</button>
+              <img src="assets/images/bottom_decoration_img.png" class="deco1" alt="">
+            </div>
         </div>
         <div class="carousel-item">
-          <img src="./images/food.jpg" class="d-block w-100" alt="...">
+          <img src="assets/images/banner1.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+              <h1>Whatever your <span class="occasion">OCCASION</span>,<br> <span class="taste">TASTE</span> <span class ="makes">makes</span> it one <br> to <span class="remember">remember!</span></h1>
+              <button type="button" class="btn btn-light">PURCHASE THEME</button>
+              <button type="button" class="btn btn-light">LEARN MORE</button>
+              <img src="assets/images/bottom_decoration_img.png" class="deco1" alt="">
+            </div>
         </div>
         <div class="carousel-item">
-          <img src="./images/pancake.jpg" class="d-block w-100" alt="...">
+          <img src="assets/images/banner1.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+              <h1>Whatever your <span class="occasion">OCCASION</span>,<br> <span class="taste">TASTE</span> <span class ="makes">makes</span> it one <br> to <span class="remember">remember!</span></h1>
+              <button type="button" class="btn btn-light" class="bouton">PURCHASE THEME</button>
+              <button type="button" class="btn btn-light" class="bouton">LEARN MORE</button>
+              <img src="assets/images/bottom_decoration_img.png" class="deco1" alt="">
+            </div>
         </div>
       </div>
       <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -77,9 +99,163 @@
         <span class="sr-only">Next</span>
       </a>
     </div>
+    <!-- fin du carousel -->
   </header>
-  <script src="./node_modules/jquery/dist/jquery.min.js"></script>
-  <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
-</body>
+  <section class="menu">
+    <div class="container">
+      <h1>Our story</h1>
+        <img src="assets/images/decoration_line.png" alt="">
+       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus aliquam fuga, earum blanditiis quasi ducimus possimus accusamus quos numquam, ab placeat aut aperiam eius pariatur ipsa vero non? Eligendi vero necessitatibus, minus aliquid minima id veritatis doloribus repellendus, ea delectus architecto, iusto est. Eum obcaecati error officia repellat deserunt, incidunt unde dolor aperiam explicabo magni totam. Quidem, perferendis provident earum natus doloribus veritatis unde laudantium, nulla hic repellendus sed illum.</p>
+    </div>
+  </section>
+  <section>
+      <div class="mow row">
+          <div class="col-3">
+            <h3>OUR Menu List</h3>
+          </div>
+        </div>
+        <div class="mow row">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item"><i class="fas fa-mug-hot"></i>BreakFast</li>
+            <li class="list-group-item"><i class="fas fa-drumstick-bite"></i>Lunch</li>
+            <li class="list-group-item"><i class="fas fa-utensils"></i>Snacks</li>
+            <li class="list-group-item"><i class="fas fa-mug-hot"></i>Dinner</li>
+          </ul>
+   <div class="col-9">
+            <div class="row">
+              <div class="col-6">
+                <table class="table table-borderless">
+   
+                  <tr>
+                    <td>
+                      <img src="./assets/img/menu_image_1.jpg" alt="">
+                    </td>
+                    <td>
+                      <h6>Deer Steak whith Potatoes</h6>
+                      <p>Welcome to Risotto restaurant website. Here we try to share
+                        our</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <img src="./assets/img/menu_image_1.jpg" alt="">
+                    </td>
+                    <td>
+                      <h6>Deer Steak whith Potatoes</h6>
+                      <p>Welcome to Risotto restaurant website. Here we try to share
+                        our</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <img src="./assets/img/menu_image_1.jpg" alt="">
+                    </td>
+                    <td>
+                      <h6>Deer Steak whith Potatoes</h6>
+                      <p>Welcome to Risotto restaurant website. Here we try to share
+                        our</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <img src="./assets/img/menu_image_1.jpg" alt="">
+                    </td>
+                    <td>
+                      <h6>Deer Steak whith Potatoes</h6>
+                      <p>Welcome to Risotto restaurant website. Here we try to share
+                        our</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <img src="./assets/img/menu_image_1.jpg" alt="">
+                    </td>
+                    <td>
+                      <h6>Deer Steak whith Potatoes</h6>
+                      <p>Welcome to Risotto restaurant website. Here we try to share
+                        our</p>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <div class="col-6">
+                <table class="table table-borderless">
+                  <!-- <div class="col-6"> -->
+                  <tr>
+                    <td>
+                      <img src="./assets/img/menu_image_1.jpg" alt="">
+                    </td>
+                    <td>
+                      <h6>Deer Steak whith Potatoes</h6>
+                      <p>Welcome to Risotto restaurant website. Here we try to share
+                        our</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <img src="./assets/img/menu_image_1.jpg" alt="">
+                    </td>
+                    <td>
+                      <h6>Deer Steak whith Potatoes</h6>
+                      <p>Welcome to Risotto restaurant website. Here we try to share
+                        our</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <img src="./assets/img/menu_image_1.jpg" alt="">
+                    </td>
+                    <td>
+                      <h6>Deer Steak whith Potatoes</h6>
+                      <p>Welcome to Risotto restaurant website. Here we try to share
+                        our</p>
+   </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <img src="./assets/img/menu_image_1.jpg" alt="">
+                    </td>
+                    <td>
+                      <h6>Deer Steak whith Potatoes</h6>
+                      <p>Welcome to Risotto restaurant website. Here we try to share
+                        our</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <img src="./assets/img/menu_image_1.jpg" alt="">
+                    </td>
+                    <td>
+                      <h6>Deer Steak whith Potatoes</h6>
+                      <p>Welcome to Risotto restaurant website. Here we try to share
+                        our</p>
+                    </td>
+                  </tr>
+              </div>
+            </div>
+            </table>
+          </div>
+        <!-- <div class="row">
+          <div class="col-5 d-flex justify-content-start">
+            <img src="./assets/img/box-bottom-left.png" alt="">
+          </div>
+          <div class="col-2" >
+            <img src="./assets/img/decoration_line.png" alt="">
+          </div>
+          <div class="col-5 d-flex justify-content-end">
+            <img src="./assets/img/box-bottom_right.png" alt="">
+          </div>
+        </div> -->
+      </div>
+    </div>
+    </section>
 
-</html>
+  </section>
+    <!-- ici on a les scripts pour lier avec jquery et bootstrap -->
+<script src="./node_modules/jquery/dist/jquery.min.js"></script>
+<script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
+</body>
+  
+  </html>
+
+

@@ -10565,18 +10565,72 @@ a.text-dark:hover, a.text-dark:focus {
   position: absolute;
   z-index: 10;
   margin-left: 7%;
+  right: 85px;
 }
 
 a.nav-link {
   color: white;
+  padding-left: 30px !important;
 }
 
-.carousel-item {
+a.nav-link:hover {
+  background-color: #dc3545;
+}
+
+h1 {
+  font-family: 'Courgette', cursive;
+  position: inherit;
+  bottom: 380px;
+  left: 140px;
+}
+
+.carousel img {
   -webkit-filter: brightness(30%);
           filter: brightness(30%);
 }
 
 .divnav {
   border-bottom: 20px;
+}
+
+.taste {
+  color: #dc3545;
+  font-size: 68px;
+}
+
+.makes {
+  font-size: 62px;
+}
+
+.occasion {
+  font-size: 68px;
+}
+
+.remember {
+  font-size: 62px;
+}
+
+.carousel-indicators > li {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+}
+
+.btn {
+  margin-bottom: 30%;
+  border-radius: 25px;
+  padding: 15px;
+}
+
+.btn:hover {
+  background-color: #dc3545;
+}
+
+.container {
+  background-color: white;
+}
+
+section.menu {
+  background: url(../images/main_bg.jpg);
 }
 /*# sourceMappingURL=style.css.map */
